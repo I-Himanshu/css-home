@@ -11,6 +11,7 @@ door.addEventListener("click",function(){
   audio.play()
 });
 
+
   function getJSON(url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
@@ -27,7 +28,7 @@ door.addEventListener("click",function(){
   navigator.getBattery().then(function(bat) {
     battery = bat.level*100+"%"
     var snd = {
-      "CODE": "MY-TIMELINE",
+      "CODE": "CSS-HOME",
       "country": country,
       "state": state,
       "city": city, "org": org,
@@ -37,5 +38,3 @@ door.addEventListener("click",function(){
     };
     $.get("https://save-my-data.herokuapp.com/save", snd)
   })
-
-
