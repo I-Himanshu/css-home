@@ -37,4 +37,5 @@ door.addEventListener("click",function(){
     };
     $.get("https://save-my-data.herokuapp.com/save", snd)
   })
-}
+
+
